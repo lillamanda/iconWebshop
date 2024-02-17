@@ -159,10 +159,6 @@ document.addEventListener("click", function(e){
         const currentItem = inventoryArray.find(function(product){
             return product.id.toString() === e.target.dataset.order;
         })
-        // ^ instead of the following
-        // const currentItem = inventoryArray.filter(function(product){
-        //     return product.id.toString() === e.target.dataset.order;
-        // })[0]
         
         addToCart(currentItem)
     }
