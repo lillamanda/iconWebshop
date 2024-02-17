@@ -72,6 +72,10 @@ footer{
 
 @media (min-width: 768px){
 
+    header{
+        margin: 1em auto;
+    }
+    
     .product-section{
         max-height: 80vh;
         overflow-y: auto;
