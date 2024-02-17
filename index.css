@@ -75,7 +75,7 @@ footer{
     header{
         margin: 1em auto;
     }
-    
+
     .product-section{
         max-height: 80vh;
         overflow-y: auto;
@@ -243,6 +243,10 @@ form:invalid button{
     cursor: not-allowed;
     box-shadow: none;
 
+}
+
+#order-confirmation-modal .btn{
+    margin-top: 2.5em;
 }
 
 .rating-stars{
