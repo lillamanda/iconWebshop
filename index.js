@@ -55,8 +55,9 @@ class OrderReceipt{
 
 
         const orderIdP = document.createElement("p");
-        orderIdP.innerText = `Order ID: ${this.uuid}`
-        receiptHtmlElement.appendChild(orderIdP)
+        orderIdP.setAttribute("class", "order-id");
+        orderIdP.innerText = `Order ID: ${this.uuid}`;
+        receiptHtmlElement.appendChild(orderIdP);
 
 
         this.orderedItems.forEach(function(item){
@@ -110,7 +111,7 @@ class OrderReceipt{
 
 
         const customerP = document.createElement("p"); 
-        customerP.innerText = "Customer";
+        customerP.innerText = "Customer:";
         customerP.appendChild(document.createElement("br"));
         
         const customerNameSpan = document.createElement("span"); 
